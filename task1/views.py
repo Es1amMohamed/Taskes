@@ -5,3 +5,7 @@ from .serializers import *
 from .models import *
 # Create your views here.
 
+
+class BlogViewSet(viewsets.ModelViewSet):
+    queryset = Blog.objects.all()
+    serializer_class = BlogSerializer
